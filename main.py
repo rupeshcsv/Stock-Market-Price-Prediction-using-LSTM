@@ -56,7 +56,7 @@ model = load_model('models/model.h5')
 # Load Test Data
 
 test_start = dt.datetime(2020, 1, 1)
-test_end = dt.datetime.now()
+test_end = dt.datetime(2021, 6, 1)
 
 test_data = web.DataReader(company, 'yahoo', test_start, test_end)
 actual_prices = test_data['Close'].values
