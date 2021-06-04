@@ -6,9 +6,12 @@ import datetime as dt
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential, load_model
 from keras.layers import Dense, Dropout, LSTM
+import os
+
+# os.environ["TF_CP_MIN_LOG_LEVEL"] = "2"
 
 # Load data
-company = 'FB'
+company = 'GOOGL'
 
 start = dt.datetime(2012, 1, 1)
 end = dt.datetime(2020, 1, 1)
